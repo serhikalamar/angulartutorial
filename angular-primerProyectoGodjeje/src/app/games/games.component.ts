@@ -11,7 +11,7 @@ import { Component, input } from '@angular/core';
       @for (game of games; track game.id) {
         <li>{{ game.name }}</li>
       }
-    </ul>
+    </ ul>
   `,
   styles: ``
 })

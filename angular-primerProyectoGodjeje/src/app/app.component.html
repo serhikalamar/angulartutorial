@@ -1,3 +1,5 @@
+<h1>{{ title }}</h1>
+
 <section>
     @if (isLogged) {
         <p>Bienvenido, {{ username }}</p>
@@ -6,6 +8,7 @@
         <p>Inicia Sesion para mas</p>
         <button (click)="isLogged = true">Log In</button>
     }
-    <app-games username="{{ username }}"></app-games>
+    <app-games></app-games>
 </section>
 
+<app-heroes></app-heroes>
