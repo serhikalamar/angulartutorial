@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, input } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 
 @Component({
   selector: 'app-games',
@@ -11,12 +11,12 @@ import { Component, input } from '@angular/core';
       @for (game of games; track game.id) {
         <li>{{ game.name }}</li>
       }
-    </ ul>
+    </ul>
   `,
   styles: ``
 })
 export class GamesComponent {
-  username = '';
+  @Input() username = '';
   games = [
     {
       id: 1,
